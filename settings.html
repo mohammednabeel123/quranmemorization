@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings - Quran Memorization Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+    <!-- Menu Icon for Sidebar Toggle -->
+    <div class="menu-icon">
+        <i class="fa-solid fa-bars" id="sidebarToggle"></i>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="progress.html">My Progress</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Switch to dark mode</a></li>
+        </ul>
+        <div class="login-section">
+            <a href="#login"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+        </div>
+    </div>
+
+    <!-- Header Section for Settings Page -->
+    <header>
+        <h1>Settings</h1>
+        <p>Update your profile, preferences, and account settings</p>
+    </header>
+
+    <!-- Main Content Container -->
+    <div class="container" id="container">
+        <h2>Profile Settings</h2>
+
+        <!-- Settings Form Section -->
+        <form class="settings-form">
+            <!-- Profile Information -->
+            <div class="chapter">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username" required />
+            </div>
+
+            <div class="chapter">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required />
+            </div>
+
+            <h3>Change Password</h3>
+            <div class="chapter">
+                <label for="current-password">Current Password</label>
+                <input type="password" id="current-password" placeholder="Enter current password" required />
+            </div>
+
+            <div class="chapter">
+                <label for="new-password">New Password</label>
+                <input type="password" id="new-password" placeholder="Enter new password" required />
+            </div>
+
+            <div class="chapter">
+                <label for="confirm-password">Confirm New Password</label>
+                <input type="password" id="confirm-password" placeholder="Confirm new password" required />
+            </div>
+
+            <!-- Save Button -->
+            <div class="buttons">
+                <button type="submit" class="btn">Save Changes</button>
+            </div>
+        </form>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; 2024 Quran Memorization Tracker</p>
+            <p>By Nabeel Mohammed</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript for Sidebar Toggle -->
+    <script src="scripts.js" defer></script>
+</body>
+</html>

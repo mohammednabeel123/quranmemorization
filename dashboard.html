@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quran Memorization Tracker</title>
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="menu-icon">
+      <i class="fa-solid fa-bars" id="sidebarToggle"></i>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="progress.html">My Progress</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Switch to dark mode</a></li>
+      </ul>
+      <div class="login-section">
+        <a href="#login"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+      </div>
+    </div>
+
+    <header>
+      <h1>Quran Memorization Tracker</h1>
+      <p>Track your memorization and revision progress with ease</p>
+    </header>
+  
+    <div class="container" id="container">
+      <h2>Progress Tracker</h2>
+      <section class="tracker">
+        <div class="chapter">
+          <label for="memorizationDay">Day of the Week</label>
+          <select id="memorizationDay" name="memorizationDay" required>
+            <option value="" disabled selected>Select a day</option>
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+          </select>
+        </div>
+  
+        <div class="chapter">
+          <label for="memorizationDate">Memorization Date</label>
+          <input
+            type="date"
+            id="memorizationDate"
+            name="memorizationDate"
+            required
+          />
+        </div>
+  
+        <div class="chapter">
+          <label for="surahMemorized">Surah Memorized</label>
+          <input
+            type="text"
+            id="surahMemorized"
+            placeholder="Enter Surah name"
+            required
+          />
+        </div>
+  
+        <div class="chapter">
+          <label for="memorizedAyahs">Number of Ayahs Memorized</label>
+          <input
+            type="text"
+            id="memorizedAyahs"
+            name="memorizedAyahs"
+            min="0"
+            placeholder="e.g., 10"
+            required
+          />
+        </div>
+  
+        <div class="chapter">
+          <label for="surahMemorized">Surah Revised</label>
+          <input
+            type="text"
+            id="surahsrevised"
+            placeholder="Enter Surah name"
+            required
+          />
+        </div>
+  
+        <div class="chapter">
+          <label for="revisedAyahs">Number of Ayahs Revised</label>
+          <input
+            type="number"
+            id="revisedAyahs"
+            name="revisedAyahs"
+            min="0"
+            placeholder="e.g., 5"
+            required
+          />
+        </div>
+  
+        <div class="buttons">
+          <button type="submit" class="btn" id="saveprogress">
+            Save Progress
+          </button>
+          <button type="reset" class="btn reset-btn">Reset</button>
+        </div>
+      </section>
+      <footer>
+        <p>&copy; 2024 Quran Memorization Tracker</p>
+        <p>By Nabeel Mohammed</p>
+      </footer>
+    </div>
+  </body>
+  </html>
+  
+  </body>
+  
